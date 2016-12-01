@@ -26,6 +26,10 @@ input,
     margin-left: 0;
 }
 
+.extendednavigation__navigation-item.folder > .item-name:after {
+    content: "\f106";
+}
+
 // Lists & Blockquote
 
 ul,
@@ -61,6 +65,10 @@ blockquote, ol, ul {
     text-align: center;
 }
 
+.imagewidget__caption {
+    right: 0;
+    left: inherit;
+}
 
 // Forms
 
@@ -214,3 +222,31 @@ select {
     vertical-align: top;
     margin-right: 10px;
 }
+
+.responsivecolumns {
+    .twitter__tweet-list .tweet-item {
+        float: none;
+    }
+    .twitter__tweet-list {
+        padding: 20px 0;
+        width: 100%;
+    }
+}
+
+// Styles for responsive columns
+.responsivecolumns .columns-three-left,
+.responsivecolumns .columns-three-middle,
+.responsivecolumns .columns-three-right,
+.responsivecolumns .columns-four-first,
+.responsivecolumns .columns-four-second,
+.responsivecolumns .columns-four-third,
+.responsivecolumns .columns-four-fourth {
+
+    [data-name="contactform"] {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+}
+
+
