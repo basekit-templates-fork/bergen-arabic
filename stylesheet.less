@@ -75,6 +75,11 @@
 
 
 
+// Arabic Bootstrap
+// ----------------------
+
+@import "@{templateLocal}/stylesheets/arabic.less";  
+
 
 // -----------------------------
 //  Theme Styles
@@ -90,14 +95,17 @@
     .flex-display(flex);
     .flex-wrap(wrap);
     .align-items(center);
+    .flex-direction(row-reverse);
     margin: 0;
     padding: 35px 35px;
     position: relative;
     z-index: 999;
+    margin-right: 40px;
 
     @media @tablet-860px {
         background-color: @color-swatch1;
         padding: 20px 75px 20px 25px;
+        margin-right: 0;
     }
 
     @media @height-600px {
